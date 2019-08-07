@@ -1,0 +1,11 @@
+- hosts: localhost
+  become: true
+  tasks:
+  - name: Install htop
+    brew: name=htop
+
+  - name: Install mc
+    brew: name=mc
+    
+  - name: Install tmux
+    brew: name=tmux
